@@ -1,0 +1,20 @@
+{
+  "platformName": "Android",
+  "automationName": "UiAutomator2",
+  "deviceName": "Pixel9TEST",
+  "avd": "Pixel9TEST",
+  "platformVersion": "16",
+  "app": "D:/app_test/demostore.apk",
+  "appPackage": "com.saucelabs.mydemoapp.android",
+  "appActivity": "com.saucelabs.mydemoapp.android.view.activities.SplashActivity",
+  "appWaitActivity": "com.saucelabs.mydemoapp.android.view.activities.*",
+  "noReset": false,
+  "fullReset": false,
+  "appWaitForLaunch": true,
+  "unicodeKeyboard": true,
+  "resetKeyboard": true,
+  "newCommandTimeout": 120,
+  "uiautomator2ServerLaunchTimeout": 90000,
+  "adbExecTimeout": 60000,
+  "androidInstallTimeout": 90000
+}

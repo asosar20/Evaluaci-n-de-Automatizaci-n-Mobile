@@ -1,0 +1,12 @@
+{
+  "platformName": "iOS",
+  "appium:automationName": "XCUITest",
+  "appium:deviceName": "iPhone 14",
+  "appium:platformVersion": "16.0",
+  "appium:app": "D:/app_test/demostore.ipa",
+  "appium:bundleId": "com.saucelabs.mydemoapp.ios",
+  "appium:noReset": true,
+  "appium:unicodeKeyboard": true,
+  "appium:resetKeyboard": true,
+  "appium:newCommandTimeout": 60000
+}
