@@ -13,7 +13,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>17</java.version>
 
-        <!-- ✅ DE LA TABLA OFICIAL SERENITY -->
         <serenity.version>4.0.12</serenity.version>
         <serenity.maven.version>4.0.12</serenity.maven.version>
         <appium.version>8.3.0</appium.version>

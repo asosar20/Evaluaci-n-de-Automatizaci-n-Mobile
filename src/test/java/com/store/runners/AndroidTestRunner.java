@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"com.store.steps", "com.store.hooks"},
-        tags = "@login",
+        tags = "@carrito",
         plugin = {"pretty"}
 )
 public class AndroidTestRunner {}

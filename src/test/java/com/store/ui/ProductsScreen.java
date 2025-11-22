@@ -8,30 +8,18 @@ public class ProductsScreen {
 
     public static final Target PRODUCTS_TITLE_ANDROID =
             Target.the("products title")
-                    .located(By.xpath("//android.widget.TextView[@content-desc='title']"));
-
-    public static final Target FIRST_PRODUCT =
-            Target.the("first product")
-                    .located(By.xpath("(//android.view.ViewGroup[@content-desc='productItem'])[1]"));
-
-    public static final Target PRODUCT_NAME =
-            Target.the("product name")
-                    .located(By.xpath("//android.widget.TextView[@content-desc='productName']"));
-
-    public static final Target PRODUCT_PRICE =
-            Target.the("product price")
-                    .located(By.xpath("//android.widget.TextView[@content-desc='productPrice']"));
-
-    public static final Target ADD_TO_CART_BUTTON =
-            Target.the("add to cart button")
-                    .located(By.xpath("//android.view.ViewGroup[@content-desc='addToCartBtn']"));
+                    .located(By.xpath("//android.widget.TextView[@text='Products']"));
 
     public static final Target PRODUCTS_TITLE_IOS =
             Target.the("products title")
-                    .located(By.xpath("//XCUIElementTypeStaticText[@name='title']"));
+                    .located(By.xpath("//XCUIElementTypeStaticText[@name='Products']"));
 
-    // ----------- MÉTODOS DINÁMICOS -----------
     public static Target title_product() {
         return ConfigHelper.isAndroid() ? PRODUCTS_TITLE_ANDROID : PRODUCTS_TITLE_IOS;
+    }
+
+    public static Target PRODUCT_BY_NAME(String productName) {
+        return Target.the("Product: " + productName)
+                .located(By.xpath("//android.widget.TextView[@text='" + productName + "']/parent::*"));
     }
 }
